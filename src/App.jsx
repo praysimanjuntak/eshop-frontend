@@ -97,6 +97,7 @@ const App = () => {
     if (window.sessionStorage.getItem('token')) {
       Reload(loadUser, setIsSignedIn);
     }
+    console.log(process.env.REACT_APP_BACKEND)
   }, [])
 
   return (

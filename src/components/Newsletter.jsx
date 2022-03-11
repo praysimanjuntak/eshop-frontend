@@ -61,7 +61,7 @@ const Newsletter = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_da76e1h', 'template_3u6obol', form.current, 'qA3RyePncvy_10-CU')
+    emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAIL_USER_ID)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
