@@ -74,7 +74,6 @@ const App = () => {
       }
     }
     await setUser(newUser);
-    console.log(user);
   }
 
   const getItems = () => {
