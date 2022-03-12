@@ -22,7 +22,7 @@ const Products = ({ items, order, orderType }) => {
         return item2.price - item1.price;
       })
       .map((item, id) => (
-        <Product item={item} key={id} id={id} />
+          <Product item={item} key={id} id={id} />
       )) : <></>}
     </Container>
   );

@@ -70,22 +70,13 @@ const Icon = styled.div`
 const Product = ({ item }) => {
   return (
     <Container>
-      <Circle />
-      <Image style={{maxWidth: '300px'}} src={item.image} />
-      <Info>
-        <Icon>
-          <ShoppingCartOutlined />
-        </Icon>
-        <Icon>
-          <Link to={`/products/${item.id}`} style={{textDecoration: 'none', color: 'inherit'}}>
-            <SearchOutlined />
-          </Link>
-        </Icon>
-        {/* <Icon>
-          <FavoriteBorderOutlined />
-        </Icon> */}
-      </Info>
-    </Container>
+        <Circle />
+        <Image style={{maxWidth: '300px'}} src={item.image} />
+        <Link to={`/products/${item.id}`} style={{textDecoration: 'none', color: 'inherit'}}>  
+          <Info>
+          </Info>
+        </Link>
+      </Container>
   );
 };
 
